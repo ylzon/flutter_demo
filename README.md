@@ -2,8 +2,7 @@
 
 一个简单的Flutter 应用DEMO.持续更新中...
 ## 截图
-![](https://ws2.sinaimg.cn/large/006tNbRwly1fug0vyikcnj30u01hcgqe.jpg)
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fug0vuutq4j30v91vogr5.jpg)
+![](https://ws1.sinaimg.cn/large/006tNbRwly1fug2dsudfnj30hq0gon4g.jpg)
 
 
 ## 支持平台
