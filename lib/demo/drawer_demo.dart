@@ -14,13 +14,14 @@ class DrawerDemo extends StatelessWidget{
 						accountName: Text('Mugen_Uncle', style: TextStyle(fontWeight: FontWeight.bold),),
 						accountEmail: Text('yanlezhong@gmail.com'),
 						decoration: BoxDecoration(
-							color: Colors.yellow[400],
+							color: Colors.deepPurple,
 							image: DecorationImage(
-								image: NetworkImage('https://tse1.mm.bing.net/th?id=OIP.JAAQvXxf131JjLxiCsF_bgHaEK&pid=Api'),
+								image: NetworkImage('https://superdevresources.com/wp-content/uploads/2016/02/40-backgrounds-material.jpg'),
+//								image: NetworkImage('https://tse1.mm.bing.net/th?id=OIP.JAAQvXxf131JjLxiCsF_bgHaEK&pid=Api'),
 								fit: BoxFit.cover, // 填充方式：铺满
 								colorFilter: ColorFilter.mode(
 									// 颜色滤镜方式
-									Colors.yellow[400].withOpacity(0.6),
+									Colors.deepPurple.withOpacity(0.6),
 									BlendMode.hardLight,
 								)
 							),

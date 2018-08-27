@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import './demo/listview_demo.dart';
+// import './demo/hellow_demo.dart';
 import './demo/drawer_demo.dart';
+import './demo/bottom_navigation_bar_demo.dart';
+import './demo/listview_demo.dart';
 
 void main() => runApp(App());
 
@@ -11,7 +13,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false, // 是否显示DEBUG标签
       home: Home(),
       theme: ThemeData(
-        primarySwatch: Colors.yellow, // 主题颜色
+        primarySwatch: Colors.deepPurple, // 主题颜色
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5), // 高亮背景颜色
         splashColor: Colors.white70,  // 水波纹颜色
       ),
@@ -64,12 +66,13 @@ class Home extends StatelessWidget{
         ),
         body: TabBarView(
           children: <Widget>[
-            Icon(Icons.local_florist, size: 128.0, color: Colors.black12,),
+            ListViewDemo(),
             Icon(Icons.change_history, size: 128.0, color: Colors.black12,),
             Icon(Icons.directions_bike, size: 128.0, color: Colors.black12,),
           ],
         ),
-        drawer: DrawerDemo(),
+        drawer: DrawerDemo(), // 抽屉菜单
+        bottomNavigationBar: BottomNavigationBarDemo() // 底部导航栏
         // endDrawer: Text('This is endDrawer'), // 右侧出现抽屉
       )
     );
