@@ -9,7 +9,7 @@ class DrawerDemo extends StatelessWidget{
 				children: <Widget>[
 					UserAccountsDrawerHeader(
 						currentAccountPicture: CircleAvatar(
-							backgroundImage: NetworkImage('https://avatars2.githubusercontent.qcom/u/17161723?s=460&v=4'),
+							backgroundImage: NetworkImage('https://ws2.sinaimg.cn/large/006tNc79gy1g305sesefyj30cs0cs749.jpg'),
 						),
 						accountName: Text('Mugen_Uncle', style: TextStyle(fontWeight: FontWeight.bold),),
 						accountEmail: Text('yanlezhong@gmail.com'),
