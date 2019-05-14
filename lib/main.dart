@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import './demo/drawer_demo.dart';
 import './demo/bottom_navigation_bar_demo.dart';
 import './demo/listview_demo.dart';
+import './demo/basic_demo.dart';
 
 void main() => runApp(App());
 
@@ -31,14 +32,6 @@ class Home extends StatelessWidget{
         appBar: AppBar(
           // 标题
           title: Text('FLUTTER'),
-
-//          // 左侧按钮
-//          leading: IconButton(
-//            icon: Icon(Icons.menu),
-//            tooltip: 'Navigration',
-//            onPressed: () => debugPrint('Navigration button is pressed.'),
-//          ),
-
           // 右侧按钮组
           actions: <Widget>[
             IconButton(
@@ -47,10 +40,8 @@ class Home extends StatelessWidget{
               onPressed: () => debugPrint('Search button is pressed.'),
             ),
           ],
-
           // 默认高度
           elevation: 0.0,
-
           // 底部设置
           bottom: TabBar(
             unselectedLabelColor: Colors.black38, // 未激活图标的颜色
@@ -67,7 +58,7 @@ class Home extends StatelessWidget{
         body: TabBarView(
           children: <Widget>[
             ListViewDemo(),
-            Icon(Icons.change_history, size: 128.0, color: Colors.black12,),
+            BasicDemo(),
             Icon(Icons.directions_bike, size: 128.0, color: Colors.black12,),
           ],
         ),
